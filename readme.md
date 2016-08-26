@@ -25,8 +25,8 @@ A -> B を 呼び出したい時に、オブザーバブルのインスタンス
 this.notify.trigger('hello', 'world')
 
 // B
-this.notify.on('hello', function(word) {
-  console.log('Hello world');
+this.notify.on('hello', function(world) {
+  console.log('Hello' + world);
 });
 
 ```
